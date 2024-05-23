@@ -2,7 +2,10 @@ import { Schema, model } from "mongoose";
 
 const personSchema = new Schema(
     {
-        "username": String,
+        "username": {
+            required:true,
+            type:String
+        },
         "age": Number
     }
 );
